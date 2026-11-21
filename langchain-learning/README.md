@@ -43,8 +43,6 @@ LangChain fills those gaps. It gives you ready-made building blocks to connect a
 | `calculator-tool.js` | An agent with one tool (`add`) that does exact addition |
 | `weather-calculatortool.js` | An agent with two tools: `add` and a live `weather` lookup |
 
-(Adjust the file names above to match yours.)
-
 ---
 
 ## How the agent works
@@ -148,7 +146,7 @@ const agent = createAgent({
 
 - The weather tool only knows three cities: Bangalore, Chennai and Mumbai.
 - The `add` tool only adds two numbers.
-- Needs a paid OpenAI key. Local models via Ollama can be swapped in with `@langchain/ollama`.
+- Requires an OpenAI API key with available credits. The model can be swapped for a local one (for example with `@langchain/ollama`) by changing the `model` line.
 
 ---
 
